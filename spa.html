@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haus of pets - Spá</title>
+    <link rel="stylesheet" href="spa.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="bglg">
+
+    </div>
+    <header id="inicio-header">
+      <div class="container">
+        <img src="imagens/logo2.png" alt="Tom's Jazz School" />
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#relex">Relaxamento</a>
+          <a href="#estilo">Estilo</a>
+          <a href="#pacotes">Pacotes</a>
+          
+        </nav>
+        <div class="navlogin">
+          <a
+            href="#"
+            class="button mt-1 mx-auto mb-1"
+            id="loginbutton"
+            onclick="entrar()"
+            >Login</a
+          >
+
+          <div class="loginformcontainer" id="loginbox">
+            <form action="#">
+              <input
+                type="text"
+                name="email"
+                id="loginemail"
+                placeholder="seu e-mail"
+              />
+              <input
+                type="password"
+                name="senha"
+                id="loginsenha"
+                placeholder="sua senha"
+              />
+              <input
+                type="submit"
+                value="Entrar"
+                class="botaologin"
+                id="closebutton"
+                onclick="fechar()"
+              />
+              <p>
+                Ainda não é cadastrado? clique <a href="cadastro.html">aqui</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="c-main">
+        <section class="sec" id="sobre">
+          <img src="imagens-spa/petspa6.jpg" alt="" id="imagem1" data-aos="fade-right"/>
+          <div class="container-sec">
+            <h1><span>Relaxamento e Estilo:</span></h1>
+            <h2>Explore o <span>Spa de Beleza</span> para Pets da <span>Haus of Pets</span></h2>
+            <h3>Bem-vindo ao Spa de Beleza para Pets:</h3>
+            <p>
+              Na Haus of Pets, acreditamos que todos os pets merecem um dia de
+              mimos e cuidados especiais. Nosso Spa de Beleza foi projetado para
+              oferecer tratamentos de luxo, tosas personalizadas, banhos
+              relaxantes e uma seleção exclusiva de acessórios e roupas para
+              deixar seu pet ainda mais charmoso.
+            </p>
+          </div>
+        </section>
+        <section class="sec" id="relex">
+          <Div class="container-sec">
+              <h2><span>Tratamentos</span> de Beleza <span>Personalizados</span>:</h2>
+              <p>Deixe nosso time de especialistas mimar seu pet com tratamentos de beleza sob medida. Desde tosas criativas até penteados elegantes, nossos groomers experientes trabalham para realçar a beleza natural do seu pet, mantendo-o confortável e confiante durante todo o processo.</p>
+          </Div>
+          <img src="imagens-spa/petspa1.jpg" alt="" data-aos="flip-left" data-aos-delay="500">
+          <div class="container-sec">
+              <h2>Banho de <span>Mimos</span>:</h2>
+              <p>Nossos banhos vão além da limpeza. Proporcionamos uma experiência de spa relaxante, com produtos suaves e aromas agradáveis que mimam os sentidos do seu pet. E depois do banho, eles saem com uma pelagem brilhante e cheirosa, prontos para arrasar!</p>
+          </div>
+        </section>
+        <section class="sec" id="estilo">
+          <div class="container-sec">
+              <h2><span>Acessórios</span> e Roupas <span>Estilosas</span>:</h2>
+              <p>Na Haus of Pets, sabemos que o estilo é importante. Nossa coleção de acessórios e roupas é cuidadosamente selecionada para oferecer opções que se adequem à personalidade do seu pet. De gravatas a bandanas, de suéteres a vestidos, ajudamos seu pet a expressar seu estilo único.</p>
+          </div>
+          <img src="imagens-spa/petspa7.jpg" alt="" data-aos="flip-right" data-aos-delay="500">
+          <div class="container-sec">
+              <h2>Estilo do <span>Seu Jeito</span>:</h2>
+              <p>Não importa se seu pet adora um visual clássico ou um visual arrojado. Nossos groomers e consultores de estilo estão prontos para ouvir suas preferências e criar um look que combine perfeitamente com a personalidade do seu amigo peludo.</p>
+          </div>
+        </section>
+        <section class="sec" id="pacotes">
+          <div class="container-sec">
+              <h2><span>Promoções</span> e <span>Pacotes</span> de Spa:</h2>
+              <p>Explore nossas promoções sazonais e pacotes de spa para garantir que seu pet aproveite ao máximo sua experiência de beleza. De descontos em tratamentos a combos especiais de banho e tosa, estamos comprometidos em proporcionar qualidade e valor em cada visita.</p>
+          </div>
+          <img src="imagens-spa/petspa3.jpg" alt="" data-aos="flip-left" data-aos-delay="500">
+          <div class="container-sec">
+              <h2><span>Transforme</span> a Rotina em um Dia de Spa:</h2>
+              <p>Trate seu pet a um dia de relaxamento e estilo no nosso Spa de Beleza. Além de sair com uma aparência incrível, eles também vão se sentir revigorados e prontos para encarar o mundo com confiança.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>
+            Na Haus of Pets, não medimos esforços para tornar a experiência de beleza do seu pet memorável e única. Explore nossos tratamentos, acessórios e roupas, e transforme o seu peludo em uma verdadeira estrela.
+        </p>
+        <aside>
+          <a href="#"
+            ><img src="imagens hostel/twitter-icon.png" alt="ícone do twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="imagens hostel/instagram-icon.png"
+              alt="ícone do instagram"
+          /></a>
+          <a href="#"
+            ><img
+              src="imagens hostel/facebook-icon.png"
+              alt="ícone do facebook"
+          /></a>
+        </aside>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.891732495849!2d-48.09646382527363!3d-15.809661823330451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bccc77f7d7197%3A0xc44eda07a6e73937!2sJK%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1690898282354!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+
+    <script src="myscript.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

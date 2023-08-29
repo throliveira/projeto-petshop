@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haus of Pets</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div id="bglg">
+
+    </div>
+
+    <header id="inicio-header">
+      <div class="container">
+        <img src="imagens/logo2.png" alt="Tom's Jazz School" />
+        <nav>
+          <a href="#inicio-header">Início</a>
+          <a href="#sobre-hero">Sobre</a>
+          <a href="#card-1">Serviços</a>
+          <a href="#garra-section">Adote</a>
+        </nav>
+        <div class="navlogin">
+          <a href="#" class="button mt-1 mx-auto mb-1" id="loginbutton" onclick="entrar()">Login</a>
+          
+            <div class="loginformcontainer" id="loginbox">
+              <form action="#">
+                <input type="text" name="email" id="loginemail" placeholder="seu e-mail">
+                <input type="password" name="senha" id="loginsenha" placeholder="sua senha">
+                <input type="submit" value="Entrar" class="botaologin" id="closebutton" onclick="fechar()">
+                <p>Ainda não é cadastrado? clique <a href="cadastro.html">aqui</a>.</p>
+              </form>
+            </div>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="sobre-hero">
+        <div class="container row-reverse">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/pet-1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/pet-2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/pet-3.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="hs-text">
+            <h1 class="mt-2">
+              O
+              <span class="text-primecolor decoration">melhor lugar</span> para
+              o seu pet
+            </h1>
+            <p class="mt-2 mb-2">
+              A Haus of Pets é uma pet shop completa que oferece uma ampla
+              variedade de serviços para o seu pet, incluindo banho, tosa,
+              perfumes, spá, veterinária, hostel e nutricionista. Também temos
+              uma parceria com um abrigo de resgate de animais de rua, então
+              você pode adotar um animal e ainda ganhar um ano com 25% de
+              desconto nos nossos serviços e produtos.
+            </p>
+            <a href="#" class="button mb-2"><strong>Adote um pet!</strong></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDS - SERVIÇOS -->
+      <section class="cards-section" id="servicos-cards">
+        <div class="cards">
+          <article class="card" id="card-1">
+            <img src="imagens/icon-hostel.png" alt="ícone do hostel" />
+            <strong>Hostel</strong>
+            <p>
+              Agora você pode viajar tranquilo sabendo que seu melhor amigo está
+              seguro.
+            </p>
+            <a href="hostel.html"
+              ><img src="imagens/arrow-right.svg" alt="Ir para página do Pet Hostel"
+            /></a>
+          </article>
+          <article class="card">
+            <img src="imagens/icon-nutri.png" alt="ícone do nutricionista" />
+            <strong>Nutricionista</strong>
+            <p>Cuidamos da alimentação do seu companheiro.</p>
+            <a href="nutri.html"
+              ><img src="imagens/arrow-right.svg" alt="Ir para página do curso"
+            /></a>
+          </article>
+          <article class="card">
+            <img src="imagens/icon-vet.png" alt="ícone de vaterinário" />
+            <strong>Veterinário</strong>
+            <p>A saúde do seu pet em primeiro lugar.</p>
+            <a href="vet.html"
+              ><img src="imagens/arrow-right.svg" alt="Ir para página do curso"
+            /></a>
+          </article>
+          <article class="card">
+            <img src="imagens/incon-spa.png" alt="ícone de Spá" />
+            <strong>Spá</strong>
+            <p>Por que o seu pet também merece!</p>
+            <a href="spa.html"
+              ><img src="imagens/arrow-right.svg" alt="Ir para página do curso"
+            /></a>
+          </article>
+        </div>
+
+        <!-- BLOG DA ONG -->
+        <aside id="garra-section">
+          <h2 class="text-center">
+            Faça um ato de amor.<span class="text-primecolor"> Adote</span>!
+          </h2>
+          <div class="container-garra container mb-2">
+            <img src="imagens/logo-horizontal-completo-2.jpeg" alt="logo da ONG Garra" class="logo-garra">
+            <p class="garra-texto">
+              O G.A.R.R.A. é uma associação que se dedica a resgatar e reabilitar
+              animais abandonados que sofreram maus tratos, disponibilizando-os
+              para adoção. Todos os resgatados passam por uma triagem, onde são
+              submetidos a exames, consulta veterinária (para que possam ser
+              vacinados e castrados) e avaliação comportamental. <br>
+              O G.A.R.R.A. tem sob sua responsabilidade 300 animais em lares
+              temporários (cães, gatos, ovelhas, cabras e cavalos). Nossos cavalos
+              são recuperados, ressociabilizados, re-domados com a doma gentil
+              (sem embocadura, sem chicotes, sem espora, sem castigo...)
+            </p>
+          </div>
+          <a href="https://www.onggarra.com/" class="button mt-2 mx-auto" target="_blank">Conhecer o GARRA</a>
+        </aside>
+      </section>
+
+      <!-- CAIXA DE COMENTÁRIOS -->
+<section class="comentarios">
+    <div class="escrev-coment" id="comentario-escrever">
+        <h3>Conte-nos <br> o que você <span>achou</span>. <br> Deixe um <span>comentário</span>!</h3>
+        <input type="text" name="comentario-nome" id="coment-name" placeholder="seu nome">
+        <input type="text" name="caixa-comentario" id="coment-caixa">
+        <input type="button" value="enviar" class="coment-botao" id="comentEnviar" onclick="mostrarcoment()">
+    </div>
+
+    <div id="comentarioExibir"></div>
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="container">
+        <div class="about-column mb-2">
+          <img src="imagens/logo2.png" alt="logo haus of pets" class="footer-logo" />
+          <p class="footer-texto">
+            Um segundo lar para o serzinho mais importante da sua vida. <br>
+            <strong>venha nos visitar!</strong>
+          </p>
+          <a href="#carouselExampleFade" class="footer-button mb-2 mx-auto">Início</a>
+        </div>
+
+        <div class="mapa mb-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.891732495849!2d-48.09646382527363!3d-15.809661823330451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bccc77f7d7197%3A0xc44eda07a6e73937!2sJK%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1690898282354!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5561000000000&text=Quero%20fazer%20um%20agendamento%20hoje" class="btn-whatsapp" target="_blank" data-aos="fade-in-up" data-aos-delay="500">
+        <img src="imagens/whatssapp.svg" alt="Botão do WhatsApp">
+        <span class="tooltip-text">Agende seu horário</span>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="myscript.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  
+  </body>
+</html>

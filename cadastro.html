@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header >
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="#sobre-hero">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contatos</a>
+      </nav>
+
+      <h1>Cadastre-se</h1>
+
+      <img
+        src="imagens/logo2.png"
+        alt="logo da petshop"
+        class="logo-cadastro"
+      />
+    </header>
+
+    <div class="cadastro cards">
+      <div class="cadastro-container">
+        <form class="cadastro-form card">
+        
+          <input
+            type="text"
+            name="nomeuser"
+            id="nomeUser"
+            placeholder="Nome de usuário"
+            class="mb-2 mt-2"
+          />
+        <br>
+          <input
+            type="text"
+            name="email"
+            id="e-mail"
+            placeholder="hausofpets@email.com"
+            class="mb-2 mt-2"
+          />
+          <br>
+        
+          <input
+            type="text"
+            name="telefone"
+            id="telefoneN"
+            placeholder="(00)0000-0000"
+            class="mb-2 mt-2"
+          />
+          
+        <br>
+        
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+            class="mb-2 mt-2"
+          />
+        <br>
+        
+          <input
+            type="password"
+            name="confpassword"
+            id="confpassword"
+            placeholder="Confirmar senha"
+            class="mb-2 mt-2"
+          />
+        
+        
+        </form>
+        
+        <form action="#" class="cadastro-form card">
+            <input type="text" name="nome-pet" id="nome-pet" placeholder="Nome do pet" class="mb-2 mt-2">
+        <br>
+            <input type="text" name="raca-pet" id="raca-pet" placeholder="Raça do Pet" class="mb-2 mt-2">
+            <br>
+            <input type="number" name="idade-pet" id="idade-pet" placeholder="Idade do pet" class="mb-2 mt-2">
+            <br>
+            <img src="imagens/Icon-cadastro.png" alt="">
+          </form>
+      </div>
+
+
+        <a href=""><button class="button">Concluir</button></a>
+    </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = document.querySelector('.button');
+        button.addEventListener('click', exibirDados);
+      });
+  
+      function exibirDados(event) {
+        event.preventDefault();
+  
+        const nomeUser = document.getElementById('nomeUser').value;
+        const email = document.getElementById('e-mail').value;
+        const telefone = document.getElementById('telefoneN').value;
+        const nomePet = document.getElementById('nome-pet').value;
+        const racaPet = document.getElementById('raca-pet').value;
+        const idadePet = document.getElementById('idade-pet').value;
+  
+        const mensagem =
+          `Dados do usuário:\n` +
+          `Nome de Usuário: ${nomeUser}\n` +
+          `E-mail: ${email}\n` +
+          `Telefone: ${telefone}\n\n` +
+          `Dados do Pet:\n` +
+          `Nome do Pet: ${nomePet}\n` +
+          `Raça do Pet: ${racaPet}\n` +
+          `Idade do Pet: ${idadePet}`;
+  
+        alert(mensagem);
+      }
+    </script>
+  </body>
+</html>

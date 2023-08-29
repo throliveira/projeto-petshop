@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus of Pets - Hostel Page</title>
+    <link rel="stylesheet" href="hostel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div id="bglg">
+
+  </div>
+  <header id="inicio-header">
+    <div class="container">
+      <img src="imagens/logo2.png" alt="Tom's Jazz School" />
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="#sobre-hostel">Sobre</a>
+        <a href="#alojamento">Alojamentos</a>
+        <a href="#atividades">Atividades</a>
+        <a href="#alimentacao">Alimentação</a>
+        <a href="#equipe">Equipe</a>
+      </nav>
+      <div class="navlogin">
+        <a href="#" class="button mt-1 mx-auto mb-1" id="loginbutton" onclick="entrar()">Login</a>
+        
+          <div class="loginformcontainer" id="loginbox">
+            <form action="#">
+              <input type="text" name="email" id="loginemail" placeholder="seu e-mail">
+              <input type="password" name="senha" id="loginsenha" placeholder="sua senha">
+              <input type="submit" value="Entrar" class="botaologin" id="closebutton" onclick="fechar()">
+              <p>Ainda não é cadastrado? clique <a href="cadastro.html">aqui</a>.</p>
+            </form>
+          </div>
+        
+      </div>
+    </div>
+  </header>
+    <main>
+      <div class="c-main">
+        <section class="container-intro" id="sobre-hostel">
+          <img src="imagens hostel/hostel-introducao.jpg" alt="cachorro relaxando" data-aos="fade-right">
+          <article class="intro-text" >
+            <h1>Um <span>Refúgio</span> Acolhedor para Seus Amigos Peludos:</h1>
+            <span>
+              <h2>Bem-Vindo ao Pet Hostel da <span>Haus of Pets</span></h2>
+            </span>
+            <p>No coração da Haus of Pets, oferecemos muito mais do que apenas cuidados para seus animais de estimação. Nosso Pet Hostel é um verdadeiro refúgio para os peludos enquanto seus donos estão ausentes. Sabemos o quanto é importante encontrar um lugar seguro e carinhoso para deixar seus animais quando a vida exige um tempo longe. No Pet Hostel da Haus of Pets, estamos empenhados em proporcionar uma estadia confortável, repleta de atividades e cuidados individualizados, para que tanto você quanto seu companheiro peludo se sintam em casa.</p>
+          </article>
+        </section>
+        <section class="container-intro" id="alojamento">
+          <article class="intro-text">
+            <h1>Alojamento <span>Aconchegante</span>:</h1>
+            <p>Entendemos que viajar pode ser um desafio quando se trata de encontrar um local que acomode seus amados animais de estimação quando não se pode levá-los com você. É por isso que criamos um ambiente único que oferece acomodações confortáveis para os seus preciosos amigos. Nossos quartos espaçosos garantem que seu animal de estimação tenha um lugar tranquilo para descansar, relaxar e recarregar as energias durante a estadia.</p>
+          </article>
+          <img src="imagens hostel/hostel-acomodacoes.jpg" alt="cachorro deitado na caminha de luxo" data-aos="fade-left">
+        </section>
+        <section class="container-intro" id="atividades">
+          <img src="imagens hostel/hostel-lazer.jpg" alt="cachorros brincando em um playground" data-aos="fade-right">
+          <article class="intro-text">
+            <h1><span>Diversão</span> e <span>Atividades</span> Físicas:</h1>
+            <p>Para evitar o sedentarismo e garantir que seus amigos peludos permaneçam ativos e felizes, implementamos um cronograma diário de lazer e atividades físicas. Com base nas necessidades e características de cada espécie de animal, nossa equipe cria um plano personalizado para manter seus animais de estimação em movimento. De espaços amplos para brincadeiras a áreas externas para caminhadas e corridas, nossas instalações são projetadas para estimular a atividade física e mental.</p>
+          </article>
+        </section>
+        <section class="container-intro" id="alimentacao">
+          <article class="intro-text">
+            <h1><span>Cuidados</span> Alimentares:</h1>
+            <p>Acreditamos que uma dieta saudável é essencial para o bem-estar de todos os animais. No Pet Hostel da Haus of Pets, oferecemos refeições balanceadas e nutritivas, adaptadas às necessidades alimentares específicas de cada animal. Nossos profissionais altamente treinados monitoram atentamente as preferências alimentares e necessidades dietéticas individuais de cada hóspede peludo, garantindo que eles desfrutem de refeições deliciosas e saudáveis durante sua estadia.</p>
+          </article>
+          <img src="imagens hostel/hostel-nutri.jpg" alt="imagen de ração com verduras e carnes" data-aos="fade-left">
+        </section>
+        <section class="container-intro" id="equipe">
+          <img src="imagens hostel/petshop-equipe.jpg" alt="imagem da equipe do petshop" data-aos="fade-right">
+          <article class="intro-text">
+            <h1>Equipe <span>Carinhosa</span> e <span>Profissional</span>:</h1>
+            <p>No Pet Hostel da Haus of Pets, nossa equipe é apaixonada por animais e está comprometida em garantir que cada hóspede peludo receba atenção individualizada e carinho constante. Nossos cuidadores experientes e treinados estão presentes 24 horas por dia, prontos para atender às necessidades dos animais e proporcionar-lhes uma experiência enriquecedora e positiva.</p>
+          </article>
+        </section>
+      </div>
+        
+    </main>
+
+    <footer>
+      <article>
+        <p>A Haus of Pets é um lar longe de casa, onde os pets podem desfrutar de conforto, cuidados e diversão. Estamos empenhados em oferecer uma estadia segura e agradável para seus amigos peludos, proporcionando-lhes um ambiente onde podem prosperar mesmo na sua ausência. Venha conhecer nosso Pet Hostel.</p>
+        <aside>
+          <a href="#"><img src="imagens hostel/twitter-icon.png" alt="ícone do twitter"></a>
+          <a href="#"><img src="imagens hostel/instagram-icon.png" alt="ícone do instagram"></a>
+          <a href="#"><img src="imagens hostel/facebook-icon.png" alt="ícone do facebook"></a>
+        </aside>
+      </article>
+      <div class="map">
+        <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.891732495849!2d-48.09646382527363!3d-15.809661823330451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bccc77f7d7197%3A0xc44eda07a6e73937!2sJK%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1690898282354!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+      </div>
+    </footer>
+    
+
+
+
+    <script src="myscript.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus of pets - Veterinária</title>
+    <link rel="stylesheet" href="vet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header id="inicio-header">
+        <div class="container">
+          <img src="imagens/logo2.png" alt="Tom's Jazz School" />
+          <nav>
+            <a href="index.html">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#acomp">Acompanhamento</a>
+            <a href="#cirurg">Cirugias</a>
+            <a href="#trat">Tratamentos</a>
+          </nav>
+          <div class="navlogin">
+            <a href="#" class="button mt-1 mx-auto mb-1" id="loginbutton" onclick="entrar()">Login</a>
+            
+              <div class="loginformcontainer" id="loginbox">
+                <form action="#">
+                  <input type="text" name="email" id="loginemail" placeholder="seu e-mail">
+                  <input type="password" name="senha" id="loginsenha" placeholder="sua senha">
+                  <input type="submit" value="Entrar" class="botaologin" id="closebutton" onclick="fechar()">
+                  <p>Ainda não é cadastrado? clique <a href="cadastro.html">aqui</a>.</p>
+                </form>
+              </div>
+            
+          </div>
+        </div>
+      </header>
+<span></span>
+      <main>
+        <div class="c-main">
+          <section class="sec" id="sobre">
+            <img src="imagens vet/vet-tratamento.jpg" alt="" id="imagem1" data-aos="fade-right" >
+            <div class="container-sec">
+              <h1>Clínica Veterinária <span>24h</span>:</h1>
+              <h2>Cuidado <span>Ininterrupto</span> para Seu <span>Amigo</span> de Quatro Patas</h2>
+              <p>Emergências não têm hora marcada. Nossa clínica veterinária 24h está pronta para agir quando seu pet mais precisa. Com uma equipe dedicada e equipamentos de última geração, garantimos atendimento imediato e cuidados de qualidade, não importa a hora do dia ou da noite.</p>
+            </div>
+          </section>
+          <section class="sec" id="acomp">
+            <div class="container-sec">
+              <h2>Acompanhamento Veterinário <span>Premium</span>:</h2>
+              <p>Seu pet merece atenção contínua. Com nosso serviço de acompanhamento veterinário, oferecemos consultas regulares e check-ups para garantir a saúde a longo prazo do seu amigo peludo. Nossos veterinários estarão ao lado do seu pet em cada etapa da jornada.</p>
+            </div>
+            <img src="imagens vet/vet-vacina.jpg" alt="" data-aos="flip-left" data-aos-delay="500">
+            <div class="container-sec">
+              <h2><span>Vacinação</span> e <span>Prevenção</span>:</h2>
+              <p>Proteja seu pet de doenças com nosso programa de vacinação abrangente. Sabemos o quanto é importante manter seu amigo peludo seguro e saudável. Nossos veterinários estão prontos para orientar você sobre as melhores práticas de prevenção.</p>
+            </div>
+          </section>
+          <section class="sec" id="cirurg">
+            <div class="container-sec">
+              <h2>Cirurgias com <span>Competência</span>:</h2>
+              <p>Em nossas mãos experientes, as cirurgias se tornam procedimentos seguros e eficazes. Nossa equipe de cirurgiões veterinários está comprometida em restaurar a vitalidade do seu pet, proporcionando uma recuperação tranquila e suave.</p>
+            </div>
+            <img src="imagens vet/vet-cirurgia.jpg" alt="" data-aos="flip-right" data-aos-delay="500">
+            <div class="container-sec">
+              <span>
+                <h2>Recuperação com <span>Conforto</span>:</h2>
+              </span>
+              <p>Após uma cirurgia, seu pet merece recuperação tranquila e segura. Oferecemos nosso Pet Hostel a metade do preço para clientes que precisam de acompanhamento médico pós-operatório. Cuide do bem-estar do seu pet, com custos médicos de remédios e materiais à parte.</p>
+            </div>
+          </section>
+          <section class="sec" id="trat">
+            <div class="container-sec">
+              <h2><span>Tratamentos</span> Prolongados com <span>Amor</span> e <span>Cuidado</span>:</h2>
+              <p>Quando a saúde do seu pet requer tratamentos prolongados, estamos aqui para oferecer suporte. Nossa equipe dedicada irá cuidar do seu pet com atenção especial, garantindo que cada passo rumo à recuperação seja feito com amor e cuidado.</p>
+            </div>
+            <img src="imagens vet/vet-recuperação.jpg" alt="" data-aos="flip-left" data-aos-delay="500">
+            <div class="container-sec">
+              <h2>Cliente <span>Fiel</span>, <span>Benefícios</span> Reais:</h2>
+              <p>Valorizamos sua confiança em nós. Com nosso programa de fidelização, cada 10 consultas rendem uma consulta gratuita para o seu pet. Quanto mais você confia em nós, mais recompensas você recebe.</p>
+            </div>
+          </section>
+        </div>
+
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <p>Venha fazer parte da família Haus of Pets, onde cada latido, miado e olhar são preciosos para nós.</p>
+          <aside>
+            <a href="#"><img src="imagens hostel/twitter-icon.png" alt="ícone do twitter"></a>
+            <a href="#"><img src="imagens hostel/instagram-icon.png" alt="ícone do instagram"></a>
+            <a href="#"><img src="imagens hostel/facebook-icon.png" alt="ícone do facebook"></a>
+          </aside>
+          </div>
+          <div class="map">
+            <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.891732495849!2d-48.09646382527363!3d-15.809661823330451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bccc77f7d7197%3A0xc44eda07a6e73937!2sJK%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1690898282354!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+        </div>
+      </footer>
+
+      <script src="myscript.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
