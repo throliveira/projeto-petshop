@@ -297,6 +297,12 @@ footer .map{
     }
 }
 
+@media screen and (min-width: 1044px){
+    .container-sec{
+        margin: 0 2rem;
+    }
+}
+
 
 /* UTILITÁRIOS */
 .mt-1{

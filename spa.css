@@ -304,6 +304,11 @@ footer .map{
         align-items: center;
     }
 }
+@media screen and (min-width: 1044px){
+    .container-sec{
+        margin: 0 2rem;
+    }
+}
 
 
 /* UTILITÁRIOS */
